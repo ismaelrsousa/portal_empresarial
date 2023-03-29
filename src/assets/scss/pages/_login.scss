@@ -1,0 +1,112 @@
+main.login-page {
+  min-height: 100vh;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+
+    .card {
+      max-width: 450px;
+      width: 100%;
+      background-color: $darker-blue;
+      padding: 2rem 3rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 13px;
+      box-shadow: 0 34px 74px rgba(#000, .2);
+
+      .top {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+          width: 150px;
+          margin-bottom: 2rem;
+        }
+
+        .desc {
+          text-align: center;
+          line-height: 20px;
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+
+      .form {
+        width: 100%;
+
+        .label {
+          position: relative;
+          margin-bottom: 2rem;
+          display: block;
+          padding-bottom: 1.25rem;
+
+          .desc {
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+            margin-left: 0.5rem;
+          }
+
+          .input {
+            padding: 1rem;
+            width: 100%;
+            border-radius: 8px;
+            background-color: $dark-blue;
+            border: 2px solid #565D64;
+            color: #FFF;
+            font-size: 14px;
+          }
+
+          .right-tag {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 125px;
+            background-color: #565D64;
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 700;
+          }
+
+          .input-container {
+            position: relative;
+
+            .input {
+              padding-right: 130px;
+            }
+          }
+
+          .forgot-password {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #FFF;
+            font-size: 12px;
+            right: .5rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .submit {
+          padding: 1rem;
+          width: 100%;
+          background-color: $blue;
+          color: #FFF;
+          font-size: 18px;
+          font-weight: 700;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
