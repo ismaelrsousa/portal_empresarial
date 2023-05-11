@@ -1,5 +1,5 @@
 <template>
-  <p class="credits">Portal WEB da T2S - © T2S - 2003-2022</p>
+  <p class="credits">Portal Leviathan - © Leviathan - 2023</p>
 </template>
 
 <script>

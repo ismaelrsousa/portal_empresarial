@@ -8,6 +8,10 @@
   border: none;
   font-family: $font;
   -webkit-tap-highlight-color:  rgba(#FFF, 0);
+
+  *::placeholder {
+    color: rgba(#FFF, .2);
+  }
 }
 
 .container {
@@ -23,7 +27,7 @@
 }
 
 body {
-  background: $background url("./assets/t2s-background.png") center/auto 90% no-repeat;
+  background: $background url("../../assets/logo-background.svg") center/auto 90% no-repeat;
   min-height: 100vh;
   color: #FFF;
 }

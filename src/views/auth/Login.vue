@@ -3,9 +3,9 @@
     <div class="container content">
       <div class="card">
         <div class="top">
-          <img src="../assets/logo.png" alt="" class="logo">
+          <img src="../../assets/logo-white.svg" alt="" class="logo">
 
-          <p class="desc">Bem vindo ao <strong>Portal T2S</strong>. <br> Preencha com seu usuário e senha para continuar</p>
+          <p class="desc">Bem vindo ao <strong>Portal Leviathan</strong>. <br> Preencha com seu usuário e senha para continuar</p>
         </div>
 
         <form action="" class="form">
@@ -13,7 +13,7 @@
             <p class="desc">Usuário:</p>
             <div class="input-container">
               <input type="text" class="input" name="user" placeholder="Usuário" required>
-              <div class="right-tag">@t2s.com.br</div>
+              <div class="right-tag">@leviathan.com.br</div>
             </div>
           </label>
 
@@ -33,8 +33,9 @@
 </template>
 
 <script>
-
 export default {
-  name: 'CreditsFoot'
+  name: 'ScreenLogin'
 }
 </script>
+
+<style lang="scss">@import '../../assets/scss/main.scss';</style>
