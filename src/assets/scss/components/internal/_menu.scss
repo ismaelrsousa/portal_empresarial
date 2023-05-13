@@ -1,0 +1,155 @@
+.menu-component {
+  width: 100%;
+  background-color: $darker-blue;
+  box-shadow: 0 10px 60px -20px rgba(#000, .05);
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .left {
+      display: flex;
+      align-items: center;
+    
+      .logo-container {
+        display: block;
+        margin-right: 2rem;
+
+        .logo {
+          width: 200px;
+        }
+      }
+
+      .menu {
+        display: flex;
+
+        .item {
+          .link {
+            display: flex;
+            align-items: center;
+            
+            .icon {
+              font-size: 30px;
+              margin-right: .5rem;
+            }
+          }
+          
+          &:not(:last-child) { margin-right: 2rem; }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .indicators {
+        display: flex;
+        align-items: center;
+
+        .item {
+          .toggle {
+            display: flex;
+            flex-direction: column;
+            margin: 0 .5rem;
+
+            .icon {
+              font-size: 24px;
+              margin-bottom: .5rem;
+            }
+
+            .percentage {
+              padding: .2rem .9rem;
+              background-color: $blue;
+              font-weight: 700;
+              font-size: 12px;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+
+      .toggle-dark-mode {
+        margin: 0 3rem;
+        display: flex;
+
+        .item {
+          padding: .4rem 1rem;
+          background-color: $dark-blue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:first-child { border-radius: 40px 0 0 40px; }
+          &:last-child { border-radius: 0 40px 40px 0; }
+
+          .icon { &, * {
+            fill: $light-blue;
+            font-size: 20px;
+          } }
+          
+          &.active {
+            background-color: $blue;
+            
+            .icon { &, * { fill: #FFF; } }
+          }
+        }
+      }
+
+      .user-container {
+        .toggle {
+          display: flex;
+          align-items: center;
+
+          .pic-container {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $border-blue;
+            border: 4px solid $border-blue;
+            margin-right: .5rem;
+            overflow: hidden;
+
+            .pic {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .description {
+            .desc {
+              font-size: 14px;
+              letter-spacing: 1px;
+              margin-bottom: .5rem;
+
+              .icon {
+                font-size: 11px;
+              }
+            }
+
+            .bar-container {
+              width: 120px;
+              height: 3px;
+              background-color: #FFF;
+              margin-bottom: .3rem;
+              border-radius: 50px;
+              overflow: hidden;
+              
+              .bar {
+                height: 100%;
+                display: block;
+                border-radius: 50px;
+
+                &.blue { background-color: $blue; }
+                &.green { background-color: $green; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
